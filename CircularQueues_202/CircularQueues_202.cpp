@@ -2,13 +2,13 @@
 using namespace std;
 
 class Queuse {
-	int FRONT, REARE, max = 5;
+	int FRONT, REAR, n = 5;
 	int queue_array(5);
 
 public:
 	Queuse() {
 		FRONT = -1;
-		REARE = -1;
+		REAR = -1;
 	}
 
 	void insert() {
@@ -18,11 +18,16 @@ public:
 		cout << endl;
 
 		// cek apakah antrian penuh
-		if ((FRONT == 0 && REARE == max - 1)) || (FRONT == REARE + 1)) {
+		if ((FRONT == 0 && REAR == n - 1)) || (FRONT == REAR + 1)) {
 			cout << "\nQueue overflow\n";
 			return;
 		}
 		// cek apakah antrian kosong
-
+		if (FRONT == -1) {
+			FRONT = 0;
+			REAR = 0;
+		}
+		queue_array[REAR] = num;
 	}
+	void 
 };
