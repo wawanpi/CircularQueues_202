@@ -10,4 +10,9 @@ public:
 		FRONT = -1;
 		REARE = -1;
 	}
+
+	void insert() {
+		int num;
+		cout << ""
+	}
 };
