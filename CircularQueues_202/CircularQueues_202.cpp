@@ -7,6 +7,7 @@ class Queuse {
 
 public:
 	Queuse() {
-		FRONT
+		FRONT = -1;
+		REARE = -1;
 	}
 };
